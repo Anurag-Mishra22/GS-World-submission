@@ -8,6 +8,13 @@
       "when": 1721990998895,
       "tag": "0000_zippy_franklin_richards",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1722057915423,
+      "tag": "0001_gray_azazel",
+      "breakpoints": true
     }
   ]
 }

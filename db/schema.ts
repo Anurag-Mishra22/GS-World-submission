@@ -1,5 +1,12 @@
 import { relations } from "drizzle-orm";
-import { integer, pgTable, text, timestamp } from "drizzle-orm/pg-core";
+import { date, varchar } from "drizzle-orm/mysql-core";
+import {
+  integer,
+  numeric,
+  pgTable,
+  text,
+  timestamp,
+} from "drizzle-orm/pg-core";
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
@@ -58,4 +65,19 @@ export const transactionsRelations = relations(transactions, ({ one }) => ({
 
 export const insertTransactionSchema = createInsertSchema(transactions, {
   date: z.coerce.date(),
+});
+
+export const employees = pgTable("employees", {
+  id: text("id").primaryKey(),
+  name: text("name").notNull(),
+  role: text("role").notNull(),
+  dateOfJoining: timestamp("date_of_joining", { mode: "date" }).notNull(),
+  contactNo: text("contact_no"),
+  email: text("email").unique().notNull(),
+  salary: numeric("salary", { scale: 2 }).notNull(),
+  identificationMark: text("identification_mark"),
+});
+
+export const insertEmployeeSchema = createInsertSchema(employees, {
+  dateOfJoining: z.coerce.date(),
 });

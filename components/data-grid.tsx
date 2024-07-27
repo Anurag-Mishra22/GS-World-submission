@@ -2,6 +2,7 @@
 
 import { useSearchParams } from "next/navigation";
 import { ChartComp } from "./chartComp";
+import { OverViewCard } from "./overview-card";
 
 export const DataGrid = () => {
 
@@ -10,8 +11,10 @@ export const DataGrid = () => {
     const from = params.get("from") || undefined;
 
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 pb-2 mb-8">
-            <h1>DataGrid</h1>
+        // <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 pb-2 mb-8">
+        <div className="">
+            {/* <h1>DataGrid</h1> */}
+            <OverViewCard />
             <ChartComp />
         </div>
     );
