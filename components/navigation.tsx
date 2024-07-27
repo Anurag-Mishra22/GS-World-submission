@@ -27,7 +27,11 @@ const routes = [
     },
     {
         href: "/fuel",
-        label: "fuels",
+        label: "Fuels",
+    },
+    {
+        href: "/rostermanagement",
+        label: "Roster Management",
     },
     {
         href: "/settings",
