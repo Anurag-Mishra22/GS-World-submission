@@ -107,6 +107,24 @@ const fuelPage = () => {
             distance: 520,
             actualCost: 52,
             predictedCost: calculatePrice(520)
+        },
+        {
+            id: "11",
+            vehicleName: "Mazda 3",
+            vehicleOwner: "Nancy Clark",
+            mileage: 32000,
+            distance: 520,
+            actualCost: 52,
+            predictedCost: calculatePrice(520)
+        },
+        {
+            id: "12",
+            vehicleName: "Mazda 3",
+            vehicleOwner: "Nancy Clark",
+            mileage: 32000,
+            distance: 520,
+            actualCost: 52,
+            predictedCost: calculatePrice(520)
         }
     ];
 

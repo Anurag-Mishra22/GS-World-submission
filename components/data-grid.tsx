@@ -4,6 +4,7 @@ import { useSearchParams } from "next/navigation";
 import { ChartComp } from "./chartComp";
 import { OverViewCard } from "./overview-card";
 
+
 export const DataGrid = () => {
 
     const params = useSearchParams();
@@ -15,7 +16,8 @@ export const DataGrid = () => {
         <div className="">
             {/* <h1>DataGrid</h1> */}
             <OverViewCard />
-            <ChartComp />
+            {/* <ChartComp /> */}
+            {/* <LineChart /> */}
         </div>
     );
 }

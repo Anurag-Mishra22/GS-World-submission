@@ -33,10 +33,10 @@ const routes = [
         href: "/rostermanagement",
         label: "Roster Management",
     },
-    {
-        href: "/settings",
-        label: "Settings",
-    }
+    // {
+    //     href: "/settings",
+    //     label: "Settings",
+    // }
 ];
 
 export const Navigation = () => {

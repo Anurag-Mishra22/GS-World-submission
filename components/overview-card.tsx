@@ -2,6 +2,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { IndianRupee, PartyPopper, ShoppingBag, User2 } from "lucide-react";
 import { Avatar, AvatarFallback } from "./ui/avatar";
+import { ChartComp } from "./chartComp";
 
 
 export const OverViewCard = () => {
@@ -55,6 +56,9 @@ export const OverViewCard = () => {
                     <CardHeader>
                         <CardTitle>Transactions</CardTitle>
                         <CardDescription>Recent transactions from your store</CardDescription>
+                        <CardContent>
+                            <ChartComp />
+                        </CardContent>
                     </CardHeader>
                 </Card>
                 <Card>
